@@ -1,9 +1,9 @@
 import pandas as pd
 
 # Ler o arquivo XLSX
-xlsx_file_path = 'C:/Users/eaws00155707/Desktop/Agente/Pasta1.xlsx'
+xlsx_file_path = 'Caminho do arquivo a ser convertido'
 df = pd.read_excel(xlsx_file_path)
 
 # Converter o DataFrame para JSON
-json_file_path = 'C:/Users/eaws00155707/Desktop/Agente/JSON/ods+iniciativas.JSON'
+json_file_path = 'caminho onde o arquivo sera salvo'
 df.to_json(json_file_path, orient='records', force_ascii=False, indent=4)
